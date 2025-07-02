@@ -15,10 +15,10 @@ $noMatch  = @()
 foreach ($user in $userList) {
     $domain = ($user.AAD_Domain+"").ToLower()
     switch ($domain) {
-        "formaxx.ag"           { $fxx    += $user }
-        "definet.de"           { $dfn    += $user }
-        "mayflower-capital.de" { $mfc    += $user }
-        ""                     { $noMatch+= $user }
+        "redacted"           { $fxx    += $user }
+        "redacted"           { $dfn    += $user }
+        "redacted"             { $mfc    += $user }
+        "redacted"                     { $noMatch+= $user }
         default                { $noMatch+= $user }
     }
 }
